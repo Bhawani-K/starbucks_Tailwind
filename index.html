@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Starbucks Coffee Company</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '480px',
+                    md: '768px',
+                    lg: '1024px',
+                    xl: '1440px'
+                },
+                fontWeight: {
+                    "normal": 500,
+                    "bold": 700,
+                    "extra-bold": 800,
+                },
+                extend: {
+                    colors: {
+                        section_1: '#d4e9e2',
+                        section_2: '#006241',
+                    },
+                    important: true,
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="p-0 m-0 outline-none">
+    <!-- NavBar -->
+    <header class="bg-white">
+        <div class="flex flex-row items-center grow sm:w-full p-3">
+            <div class="flex flex-row items-center grow space-x-3">
+                <a href="https://www.starbucks.com/" class="block ">
+                    <img class="h-7 sm:h-10" src="./images//starbucksLogo.png" alt="">
+                    <!-- <span class="!absolute !overflow-hidden w-px h-px p-0 b-0">Starbucks Coffee Company</span> -->
+                </a>
+                <div class="flex flex-row space-x-5 m-0 p-0 hidden md:flex list-none uppercase font-bold inline-block items-center">
+                    <li class="pl-0"><a class="no-underline uppercase font-bold">Menu</a></li>
+                    <li class="pl-0"><a class="no-underline uppercase font-bold">Rewards</a></li>
+                    <li class="pl-0"><a class="no-underline uppercase font-bold">Gift Cards</a></li>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <div class="ml-auto shrink-0">
+                    <div class="ml-6 flex items-center float-right hidden md:flex">
+                        <a href="#" class="no-underline font-bold mr-6">Find a store</a>
+                        <a href="#" class="no-underline font-bold mr-6">Sign-In</a>
+                        <a href="#" class="no-underline font-bold mr-6">JoinNow</a>
+                    </div>
+                </div>
+            </div>
+            <!-- hamburger icon -->
+            <div class="flex flex-col sm:hidden">
+                <div class="w-5 h-0.5 m-0.5 bg-black"></div>
+                <div class="w-5 h-0.5 m-0.5 bg-black"></div>
+                <div class="w-5 h-0.5 m-0.5 bg-black"></div>
+            </div>
+        </div>
+    </header>
+    <!-- Main Section -->
+    <section class="space-y-10">
+        <div class="block">
+            <div class="md:flex bg-section_1 p-5">
+                <img class="md:w-3/5 block" alt="A collage of three images shows two women: one is of a woman holding a basket of green coffee beans  and the other is a woman holding a coffee branch. The third images shows buckets of fresh coffee cherries." src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-79582.png">
+                <div class="md:w-2/5 flex flex-col justify-between items-center m-5">
+                    <h1 class="md:text-5xl text-2xl font-bold mb-4 tracking-wider -z-1 ">Buy coffee, help grow a community</h1>
+                    <div class="md:text-2xl text-xl items-center m-auto ">
+                        We care deeply about coffee farmers and their communities. Your support helps us invest in the well-being of farmers across the world’s coffee-growing regions.
+                    </div>
+                    <a href="#" class="px-5 py-1 border-2 border-black text-l mt-5 m-auto rounded-full text-black">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex bg-section_2 text-white ">
+            <img class="md:w-3/5 block float-right" alt="Image of three new coffee bags for Veranda Blend, Sumatra and Pike Place Roast" src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-79284.jpg">
+            <hr>
+            <div class="md:w-2/5 flex flex-col justify-between items-center m-auto">
+                <h2 class="md:text-5xl text-2xl font-bold mb-10 tracking-wider m-auto">The art of the roast</h2>
+                <div class="md:text-2xl text-xl items-center m-auto mb-10">
+                    With a new roast spectrum front and center on our coffee bags, it’s easier than ever to find a taste you love.
+                </div>
+                <a href="#" class="px-5 py-1 border-2 border-white text-l mt-5 m-auto rounded-full font-bold tracking-wider">Order now</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <section>
+
+    </section>
+</body>
+
+</html>
